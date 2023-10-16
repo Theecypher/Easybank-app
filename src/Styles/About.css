@@ -1,0 +1,45 @@
+.about {
+    background-color: var(--LightGrayishBlue);
+}
+.mainAbout {
+    margin: 20px auto 50px;
+}
+.aboutContent {
+    padding: 3rem;
+}
+.aboutContent h2 {
+    margin: 20px auto;
+    font-size: 2.3rem;
+    width: 60%;
+    font-weight: lighter;
+    letter-spacing: 1.7px;
+}
+.about p {
+    margin: 15px auto;
+    width: 77%;
+    color: var(--GrayishBlue);
+}
+.aboutGrid {
+    margin: 25px;
+    display: grid;
+    grid-gap: 20px;
+}
+.aboutGrid img {
+    margin: 10px auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .mainAbout {
+        text-align: left;
+    }
+    .mainAbout p {
+        margin-left: 5px;
+        width: 50%;
+    }
+    .mainAbout h2 {
+        margin-left: 5px;
+    }
+}

@@ -1,0 +1,46 @@
+.heroSection {
+    display: flex;
+    flex-direction: column-reverse;
+    /* position: absolute;
+    top: 1%; */
+}
+.imageSection {
+    background-image: url(../images/bg-intro-mobile.svg);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    color: var(--DarkBlue);
+    width: 60%;
+    margin: 15px auto;
+    font-size: 2.5rem;
+}
+.heroSection p {
+    width: 70%;
+    margin: 10px auto;
+    color: var(--GrayishBlue);
+    font-size: 18px;
+}
+.imageSection img {
+    width: 380px;
+}
+
+@media screen and (min-width: 1024px) {
+    .heroSection {
+        height: 100vh;
+        flex-direction: row;
+        align-items: center;
+    }
+    .imageSection {
+        background-image: url(../images/bg-intro-desktop.svg);
+        /* background-position: left; */
+        background-position: top;
+        object-fit: contain;
+    }
+    .heroSection img {
+        object-fit: contain;
+        width: 500px;
+        height: 800px;
+    }
+}

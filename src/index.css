@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+section {
+    font-size: 18px;
+    text-align: center;
+    /* height: 100vh; */
+    margin: 2rem auto 1rem;
+}
+
+:root {
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.btn1 {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    background: linear-gradient(var(--LimeGreen), var(--BrightCyan));
+    border-radius: 15px;
+}

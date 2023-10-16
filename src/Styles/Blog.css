@@ -1,0 +1,46 @@
+.blogGrid .row {
+    background-color: var(--VeryLightGray);
+}
+.blogGrid .row img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+.blogGrid .row {
+    width: 420px;
+    margin: 1.5rem auto;
+    text-align: left;
+}
+.blogGrid .row p,
+.blogGrid .row h4,
+.blogGrid .row span {
+    text-align: left;
+    padding: 2px 30px;
+    margin: 10px;
+}
+.blogGrid .row p {
+    width: 105%;
+    color: var(--GrayishBlue);
+}
+.blogGrid .row h4 {
+    width: 90%;
+    text-align: left;
+}
+.row span {
+    display: block;
+}
+
+@media screen and (min-width: 1024px) {
+    .blogGrid {
+        padding: 15px 3.5rem;
+        display: flex;
+    } 
+    .blogGrid .row {
+        width: 270px;
+        /* margin: 1.5rem auto;
+        text-align: left; */
+    }
+    .blogGrid .row img {
+        height: 200px;
+    }
+}
