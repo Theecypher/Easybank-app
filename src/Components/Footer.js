@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../images/logo2.svg"
+import logo from "../images/logo.svg"
 import { FaFacebook, FaInstagram, FaPinterest, FaTwitter, FaYoutube } from "react-icons/fa"
 import Buttons from "./Button";
 import "../Styles/Footer.css"

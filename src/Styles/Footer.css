@@ -9,9 +9,10 @@
     text-align: center;
     padding: 10px;
 }
-
-.footer img {
-    color: white;
+.footer h2 {
+    background-color: var(--White);
+    width: 40%;
+    margin: auto;
 }
 
 .socialMedia {
@@ -50,6 +51,9 @@
         align-items: center;
         justify-content: space-between;
         padding: auto 5rem;
+    }
+    .footer h2 {
+        width: 80%;
     }
     .footer .footerItem {
         display: flex;

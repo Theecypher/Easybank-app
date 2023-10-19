@@ -14,22 +14,6 @@
     left: 50%;
     transform: translate(-50%);
 }
-/* .nav-links-mobile {
-    padding: 0.5rem 1rem;
-    white-space: nowrap;
-    background-color: #fafafa;
-    border-radius: 3px;
-    text-decoration: none;
-    font-size: 1rem;
-    color: #fff;
-    font-weight: 500;
-} */
-
-/* .logo {
-    color: white;
-    justify-self: start;
-    cursor: pointer;
-} */
 
 .nav-menu {
     display: grid;
@@ -49,6 +33,14 @@
     display: none;
 }
 
+.btn2 {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    background: linear-gradient(var(--LimeGreen), var(--BrightCyan));
+    border-radius: 15px;
+}
+
 @media screen and (max-width: 850px) {
     .NavbarItems {
         z-index: 99;
@@ -57,35 +49,35 @@
     .nav-menu {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        background-color: rgba(255, 255, 255, .25);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
-        backdrop-filter: blur(4px);
+        background-color: var(--White);
+        /* background-color: rgba(255, 255, 255, .25); */
+        /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37); */
+        /* backdrop-filter: blur(4px); */
         border-radius: 13px;
-        width: 100%;
-        /* height: auto; */
+        width: 50%;
         position: absolute;
-        top: 100%;
-        left: -110%;
-        align-items: stretch;
-        /* padding: 80px 0 30px 0; */
+        top: -350%;
+        left: 50%;
+        transform: translateX(-50%);
+        align-items: center;
         margin: 0;
         z-index: -1;
         transition: all 0.3s ease-in-out;
     }
+    .btn2  {
+        display: none;
+    }
     .nav-menu.active {
-        left: 0%;
+        top: 140%;
     }
     li { 
+        padding: 5px;
         width: 100%;
     }
     .navLinks {
-        display: block;
-        width: 10px;
-        /* padding: 1.5rem 0; */
         color: #222;
     }
-    .navLinks:hover {
+    /* .navLinks:hover {
         background-color: rgba(255, 255, 255, 0.25);
         backdrop-filter: blur(20px);
     }
@@ -98,12 +90,11 @@
         font-weight: bold;
         width: 80%;
         margin: auto;
-    }
+    } */
     .menu-icons {
         display: block;
         position: absolute;
         right: 5%;
         top: 10px;
-        /* transform: translateX(-50%); */
     }
 }
