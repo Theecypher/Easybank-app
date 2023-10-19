@@ -44,3 +44,12 @@
         height: 200px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    /* .blogGrid { */
+        /* padding: 3rem 30px; */
+    /* }    */
+    .blogGrid .row {
+        width: 250px;
+    }
+}

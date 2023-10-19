@@ -1,8 +1,6 @@
 .heroSection {
     display: flex;
     flex-direction: column-reverse;
-    /* position: absolute;
-    top: 1%; */
 }
 .imageSection {
     background-image: url(../images/bg-intro-mobile.svg);
@@ -28,19 +26,23 @@ h1 {
 
 @media screen and (min-width: 1024px) {
     .heroSection {
-        height: 100vh;
         flex-direction: row;
         align-items: center;
     }
     .imageSection {
         background-image: url(../images/bg-intro-desktop.svg);
-        /* background-position: left; */
-        background-position: top;
+        background-position:right;
         object-fit: contain;
     }
     .heroSection img {
         object-fit: contain;
         width: 500px;
-        height: 800px;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .heroSection {
+        max-width: 600px;
     }
 }

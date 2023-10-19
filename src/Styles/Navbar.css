@@ -98,3 +98,9 @@
         top: 10px;
     }
 }
+
+/* @media screen and (max-width: 600px) {
+    .NavbarItems {
+        max-width: 600px;
+    }
+} */
