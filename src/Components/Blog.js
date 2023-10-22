@@ -6,7 +6,7 @@ import confetti  from "../images/image-confetti.jpg"
 
 const Blog = () => {
     return ( 
-        <section className="blog" id="blog">
+        <section className="blog" id="projects">
             <div className="blogContent">
                 <h2>Latest Articles</h2>
                 <div className="blogGrid">

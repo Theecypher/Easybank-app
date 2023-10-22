@@ -2,23 +2,28 @@ const Navitems = () => {
     const items = [
         {
             id: 0,
-            link: "Home"
+            link: "Home",
+            to:"/"
         },
         {
             id: 1,
-            link: "About"
+            link: "About",
+            to:"#about"
         },
         {
             id: 2,
-            link: "Services"
+            link: "Services",
+            to:"#services"
         },
         {
             id: 3,
-            link: "Projects"
+            link: "Projects",
+            to:"#projects"
         },
         {
             id: 4,
-            link: "Experience"
+            link: "Experience",
+            to:"#experience"
         },
     ]
 

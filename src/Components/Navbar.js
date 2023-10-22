@@ -5,6 +5,7 @@ import "../Styles/Navbar.css"
 import { useState } from 'react';
 import logo from "../images/logo.svg"
 import Navitems from './Navitems';
+import Reveal from 'react-awesome-reveal';
 
 
 const NavBar = () => {
@@ -29,17 +30,17 @@ const NavBar = () => {
                             display: "block"
                         }}
                         />
-                    )}
+                        )}
                 </button>
             </div>
 
         <ul className={navbarOpen ? "nav-menu active" : "nav-menu"}>
             {items.map((item, index) => (
                     <li key={index} className='navItem'>
-                       <Link className='navLinks'>{item.link}</Link>
+                        <NavLink to={item.to} className="navLinks">{item.link}</NavLink>
                     </li>
 
-           ))}
+))}
         </ul>
 
             <Link className='btn2'>CONTACT</Link>
@@ -50,35 +51,3 @@ const NavBar = () => {
 }
  
 export default NavBar;
-
-
-        //     <ul className={navbarOpen ? "nav-menu active" : "nav-menu"}>
-        //         <li>
-        //             <Link className='navLinks'>HOME</Link>
-        //         </li>
-        //         <li>
-        //             <Link className='navLinks'>ABOUTME</Link>
-        //         </li>
-        //         <li>
-        //             <Link className='navLinks'>PROJECTS</Link>
-        //         </li>
-        //         <li>
-        //             <Link className='navLinks'>SERVICES</Link>
-        //         </li>
-        //         <li>
-        //             <NavLink
-
-        //             onClick={() => setIsClick((prev) => !prev)}
-
-        //             className={isClick ? "active" : "inactive"}
-        //             >
-        //                 Experience
-        //             </NavLink>
-        //         </li>
-
-        //     <Link className='btn2'>
-        //        CONTACT
-        //     </Link>
-
-        //     {/* <NavLink ></NavLink> */}
-        // </ul>

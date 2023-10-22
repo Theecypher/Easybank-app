@@ -1,3 +1,4 @@
+import Reveal from "react-awesome-reveal"
 import "../Styles/About.css"
 import api from "../images/icon-api.svg"
 import budget from "../images/icon-budgeting.svg"
@@ -7,7 +8,9 @@ import online  from "../images/icon-online.svg"
 
 const About = () => {
     return ( 
-        <section className="about">
+       <Reveal>
+
+        <section className="about" id="about">
             <div className="aboutContent">
                 <div className="mainAbout">
                     <h2>Why choose Easybank?</h2>
@@ -54,6 +57,7 @@ const About = () => {
                 </div>
             </div>
         </section>
+       </Reveal>
      );
 }
  
